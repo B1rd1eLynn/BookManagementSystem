@@ -19,7 +19,7 @@ namespace BookManagementSystem.Models{
 
             Console.WriteLine("Enter the genre of the book: ");
             newBook.Genre = Console.ReadLine();
-            
+
             // continues until unique ID is entered
             while (true){
             Console.WriteLine("Enter the ID of the book: ");
@@ -29,7 +29,7 @@ namespace BookManagementSystem.Models{
                 continue;
             }
             else{
-                bewBook.Id = givenId;
+                newBook.Id = givenId;
                 Books.Add(givenId, newBook);
             }
             }
