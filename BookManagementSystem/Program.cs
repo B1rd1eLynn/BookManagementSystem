@@ -1,6 +1,7 @@
 ﻿using BookManagementSystem.Models;
  BookManager manager = new BookManager();
-
+/// <summary>
+/// Main entry point for the Book Management System
 while (true){
     Console.WriteLine("--------------------------");
     Console.WriteLine("Welcome to the Book Management System");

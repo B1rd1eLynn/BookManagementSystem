@@ -1,4 +1,8 @@
 namespace BookManagementSystem.Models{
+    /// <summary>
+    /// Manages the collection of books in the system
+    /// Contains methods to add, view, and remove books from the book dictionary
+    /// </summary>
     public class BookManager{
         // This is a dictionary because it looks up items easier with ids
         private Dictionary<int, Book> Books{get; set;}
@@ -10,7 +14,9 @@ namespace BookManagementSystem.Models{
                {3, new Book{Title = "1984", Author = "F. Scott Fitzgerald", Genre = "Fiction", Id = 3}},
             };
         }
-
+        /// <summary>
+        /// addes a new book to the system from user input
+        /// </summary>
         public void AddBook(){
             Book newBook = new Book();
             Console.WriteLine("Enter the title of the book: ");
@@ -38,7 +44,9 @@ namespace BookManagementSystem.Models{
             }
 
         }
-
+        /// <summary>
+        /// Gets all books in the system
+        /// </summary>
         public void GetBooks(){
             foreach (Book book in Books.Values){
                 Console.WriteLine($"Title: {book.Title}");
@@ -48,7 +56,9 @@ namespace BookManagementSystem.Models{
                 Console.WriteLine("--------------------------");
             }
         }
-
+        /// <summary>
+        /// Gets a book by its ID
+        /// </summary>
         public void GetBookById(){
             Console.WriteLine("Enter book ID search");
             int id = int.Parse(Console.ReadLine());
@@ -65,7 +75,9 @@ namespace BookManagementSystem.Models{
                 Console.WriteLine("--------------------------");
             }
         }
-        
+        /// <summary>
+        /// Removes a book by its ID after confirmation
+        /// </summary>
         public void RemoveBookById(){
             Console.WriteLine("Enter book ID to remove");
             int id = int.Parse(Console.ReadLine());
