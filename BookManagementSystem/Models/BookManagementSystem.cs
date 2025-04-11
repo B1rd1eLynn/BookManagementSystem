@@ -33,10 +33,10 @@ namespace BookManagementSystem.Models{
             else{
                 newBook.Id = givenId;
                 Books.Add(givenId, newBook);
+                break;
             }
             }
 
-            Books.Add(newBook.Id, newBook);
         }
 
         public void GetBooks(){
