@@ -45,6 +45,7 @@ namespace BookManagementSystem.Models{
                 Console.WriteLine($"Author: {book.Author}");
                 Console.WriteLine($"Genre: {book.Genre}");
                 Console.WriteLine($"ID: {book.Id}");
+                Console.WriteLine("--------------------------");
             }
         }
 
@@ -57,9 +58,11 @@ namespace BookManagementSystem.Models{
                 Console.WriteLine($"Author: {book.Author}");
                 Console.WriteLine($"Genre: {book.Genre}");
                 Console.WriteLine($"ID: {book.Id}");
+                Console.WriteLine("--------------------------");
             }
             else{
                 Console.WriteLine("Book not found.");
+                Console.WriteLine("--------------------------");
             }
         }
         
@@ -72,19 +75,23 @@ namespace BookManagementSystem.Models{
                 Console.WriteLine($"Title: {book.Title}");
                 Console.WriteLine($"Author: {book.Author}");
                 Console.WriteLine($"Genre: {book.Genre}");
-
+                Console.WriteLine("--------------------------");
                 Console.WriteLine("Confirm remove book? y/n");
+
                 string confirmation = Console.ReadLine().ToLower();
                 if (confirmation == "Y"){
                     Books.Remove(id);
                     Console.WriteLine("Book removed successfully");
+                    Console.WriteLine("--------------------------");
                 }
                 else{
                     Console.WriteLine("Book removal canceled");
+                    Console.WriteLine("--------------------------");
                 }
             }
             else{
                 Console.WriteLine("Book not found.");
+                Console.WriteLine("--------------------------");
             }
         }
     }
