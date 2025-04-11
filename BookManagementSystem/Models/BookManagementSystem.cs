@@ -7,12 +7,7 @@ namespace BookManagementSystem.Models{
         // This is a dictionary because it looks up items easier with ids
         private Dictionary<int, Book> Books{get; set;}
         public BookManager(){
-            Books = new Dictionary<int, Book>{
-                // for testing purposes only
-               {1, new Book{Title = "the Great Gatsby", Author = "F. Scott Fitzgerald", Genre = "Fiction", Id = 1}},
-               {2, new Book{Title = "TLDR", Author = "F. Scott Fitzgerald", Genre = "Fiction", Id = 2}},
-               {3, new Book{Title = "1984", Author = "F. Scott Fitzgerald", Genre = "Fiction", Id = 3}},
-            };
+            Books = new Dictionary<int, Book>();
         }
         /// <summary>
         /// addes a new book to the system from user input
