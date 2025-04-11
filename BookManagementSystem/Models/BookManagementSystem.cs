@@ -19,9 +19,20 @@ namespace BookManagementSystem.Models{
 
             Console.WriteLine("Enter the genre of the book: ");
             newBook.Genre = Console.ReadLine();
-
+            
+            // continues until unique ID is entered
+            while (true){
             Console.WriteLine("Enter the ID of the book: ");
-            newBook.Id = int.Parse(Console.ReadLine());
+            int givenId = int.Parse(Console.ReadLine());
+            if (Books.ContainsKey(givenId)){
+                Console.WriteLine("ID already exists.");
+                continue;
+            }
+            else{
+                bewBook.Id = givenId;
+                Books.Add(givenId, newBook);
+            }
+            }
 
             Books.Add(newBook.Id, newBook);
         }
