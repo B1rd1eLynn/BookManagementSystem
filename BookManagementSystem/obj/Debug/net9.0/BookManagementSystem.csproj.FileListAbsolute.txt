@@ -1,0 +1,14 @@
+C:\Users\malka\OneDrive\Documents\CIS_106_projects\BookManagementSystem\BookManagementSystem\bin\Debug\net9.0\BookManagementSystem.exe
+C:\Users\malka\OneDrive\Documents\CIS_106_projects\BookManagementSystem\BookManagementSystem\bin\Debug\net9.0\BookManagementSystem.deps.json
+C:\Users\malka\OneDrive\Documents\CIS_106_projects\BookManagementSystem\BookManagementSystem\bin\Debug\net9.0\BookManagementSystem.runtimeconfig.json
+C:\Users\malka\OneDrive\Documents\CIS_106_projects\BookManagementSystem\BookManagementSystem\bin\Debug\net9.0\BookManagementSystem.dll
+C:\Users\malka\OneDrive\Documents\CIS_106_projects\BookManagementSystem\BookManagementSystem\bin\Debug\net9.0\BookManagementSystem.pdb
+C:\Users\malka\OneDrive\Documents\CIS_106_projects\BookManagementSystem\BookManagementSystem\obj\Debug\net9.0\BookManagementSystem.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\malka\OneDrive\Documents\CIS_106_projects\BookManagementSystem\BookManagementSystem\obj\Debug\net9.0\BookManagementSystem.AssemblyInfoInputs.cache
+C:\Users\malka\OneDrive\Documents\CIS_106_projects\BookManagementSystem\BookManagementSystem\obj\Debug\net9.0\BookManagementSystem.AssemblyInfo.cs
+C:\Users\malka\OneDrive\Documents\CIS_106_projects\BookManagementSystem\BookManagementSystem\obj\Debug\net9.0\BookManagementSystem.csproj.CoreCompileInputs.cache
+C:\Users\malka\OneDrive\Documents\CIS_106_projects\BookManagementSystem\BookManagementSystem\obj\Debug\net9.0\BookManagementSystem.dll
+C:\Users\malka\OneDrive\Documents\CIS_106_projects\BookManagementSystem\BookManagementSystem\obj\Debug\net9.0\refint\BookManagementSystem.dll
+C:\Users\malka\OneDrive\Documents\CIS_106_projects\BookManagementSystem\BookManagementSystem\obj\Debug\net9.0\BookManagementSystem.pdb
+C:\Users\malka\OneDrive\Documents\CIS_106_projects\BookManagementSystem\BookManagementSystem\obj\Debug\net9.0\BookManagementSystem.genruntimeconfig.cache
+C:\Users\malka\OneDrive\Documents\CIS_106_projects\BookManagementSystem\BookManagementSystem\obj\Debug\net9.0\ref\BookManagementSystem.dll
