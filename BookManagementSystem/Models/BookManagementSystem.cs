@@ -5,7 +5,9 @@ namespace BookManagementSystem.Models{
         public BookManager(){
             Books = new Dictionary<int, Book>{
                 // for testing purposes only
-               {1, new Book{Title = "the Great Gatsby", Author = "F. Scott Fitzgerald", Genre = "Historical Fiction", Id = 1}};
+               {1, new Book{Title = "the Great Gatsby", Author = "F. Scott Fitzgerald", Genre = "Fiction", Id = 1}},
+               {2, new Book{Title = "TLDR", Author = "F. Scott Fitzgerald", Genre = "Fiction", Id = 2}},
+               {3, new Book{Title = "1984", Author = "F. Scott Fitzgerald", Genre = "Fiction", Id = 3}},
             };
         }
 
@@ -43,6 +45,21 @@ namespace BookManagementSystem.Models{
                 Console.WriteLine($"Author: {book.Author}");
                 Console.WriteLine($"Genre: {book.Genre}");
                 Console.WriteLine($"ID: {book.Id}");
+            }
+        }
+
+        public void GetBookById(){
+            Console.WriteLine("Enter book ID search");
+            int id = int.Parse(Console.ReadLine());
+            if (Books.ContainsKey(id)){
+                Book book = Books[id];
+                Console.WriteLine($"Title: {book.Title}");
+                Console.WriteLine($"Author: {book.Author}");
+                Console.WriteLine($"Genre: {book.Genre}");
+                Console.WriteLine($"ID: {book.Id}");
+            }
+            else{
+                Console.WriteLine("Book not found.");
             }
         }
     }
