@@ -3,4 +3,5 @@
 
  //manager.AddBook();
 // manager.GetBooks();
- manager.GetBookById();
+//  manager.GetBookById();
+ manager.RemoveBookById();

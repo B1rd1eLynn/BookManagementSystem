@@ -62,5 +62,30 @@ namespace BookManagementSystem.Models{
                 Console.WriteLine("Book not found.");
             }
         }
+        
+        public void RemoveBookById(){
+            Console.WriteLine("Enter book ID to remove");
+            int id = int.Parse(Console.ReadLine());
+            if (Books.ContainsKey(id)){
+                Book book = Books[id];
+                
+                Console.WriteLine($"Title: {book.Title}");
+                Console.WriteLine($"Author: {book.Author}");
+                Console.WriteLine($"Genre: {book.Genre}");
+
+                Console.WriteLine("Confirm remove book? y/n");
+                string confirmation = Console.ReadLine().ToLower();
+                if (confirmation == "Y"){
+                    Books.Remove(id);
+                    Console.WriteLine("Book removed successfully");
+                }
+                else{
+                    Console.WriteLine("Book removal canceled");
+                }
+            }
+            else{
+                Console.WriteLine("Book not found.");
+            }
+        }
     }
 }
